@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Lato", sans-serif;
+}
+.container {
+  margin-left: 40px;
+  box-sizing: border-box;
+}
+
+.top-block {
+  box-sizing: border-box;
+  width: 100%;
+  height: 33vh;
+  display: grid;
+  grid-template-columns: 250px 650px;
+  grid-template-rows: 26vh 7vh;
+  background-color: rgb(69, 69, 69);
+
+  color: white;
+}
+.top-block-img {
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+.title {
+  margin: 20px 0px 15px 0;
+  font-size: 23px;
+}
+.sub-title {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+}
+.details {
+  font-size: 13px;
+}
+.top-block-button {
+  font-size: 13px;
+  align-self: start;
+  justify-self: start;
+}
+.top-block-button > .las {
+  margin-left: 0px;
+}
+label > i {
+  margin-right: 6px;
+}
+.bottom-block {
+  box-sizing: border-box;
+  margin-top: 5px;
+  /* margin-left: 20px; */
+}
+.bb {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: 12px;
+  padding: 10px;
+}
+.bottom-block {
+  padding-left: 10px;
+  padding-right: 30px;
+  font-weight: 1000;
+}
+.bottom-block > section {
+  padding-left: 20px;
+}
+.bottom-block-2,
+.bottom-block-4 {
+  background-color: rgb(240, 240, 240);
+}
+time {
+  text-align: start;
+}
+.link {
+  text-decoration: none;
+  border: 1px solid black;
+  margin: auto;
+  font-weight: 3000;
+  color: BLUE;
+  padding: 3px;
+}
+.song-player-bar {
+  box-sizing: border-box;
+  background-color: rgb(67, 104, 155);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.left-side-song-title {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+#title-bottom-player {
+  font-size: 17px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#bottom-player-artist {
+  margin-top: 20px;
+}
+.song-player-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom-player-icons {
+  box-sizing: border-box;
+  padding-top: 40px;
+  color: white;
+  font-weight: 600;
+}
+.las {
+  margin-left: 100px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.nav-bar {
+  position: fixed;
+
+  padding-left: 10px;
+  padding-bottom: 0px;
+  left: 0px;
+  width: 40px;
+  height: 87.4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0px;
+  box-sizing: border-box;
+  background-color: rgb(240, 240, 240);
+}
+.nav-bar > i {
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 30px;
+  font-size: 15px;
+  -webkit-text-stroke: 0.6px black;
+}
+.la-soundcloud {
+  padding-bottom: 25px;
+}
