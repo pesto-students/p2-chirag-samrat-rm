@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+header {
+  background-color: rgb(60, 60, 60);
+  padding-left: 4%;
+  width: 100vw;
+}
+/*use shiny text in heading*/
+/*Use 'ch' unit to define the width of the character length of the text you are working with and 75 ch is a thum rule to follow.*/
+body {
+  background-color: rgb(14, 14, 14);
+  color: white;
+}
+.about-article,
+.battery-article {
+  /* border: 1px solid white; */
+  height: 75vh;
+}
+figcaption {
+  display: none;
+}
+.about-title,
+.battery-titles {
+  font-size: 2.7rem;
+  padding: 5.5rem 0rem 0 53rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+.about-text {
+  font-size: 1.9rem;
+  padding: 3rem 10rem 0 47rem;
+  line-height: 130%;
+}
+.left-block-img {
+  margin: 6rem 3rem 0 5rem;
+  border-radius: 10px;
+  float: left;
+  /* box-shadow: -10px -10px rgb(17, 17, 17); */
+}
+.right-block-img {
+  margin: 6rem 3rem 0 5rem;
+  border-radius: 10px;
+  float: right;
+}
+.battery-text {
+  font-size: 1.9rem;
+  line-height: 130%;
+  padding: 3rem 50rem 0 4rem;
+}
+.battery-title {
+  font-size: 2.7rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  padding: 5.5rem 0rem 0 5rem;
+}
+video {
+  height: 584px;
+  width: 386px;
+  padding: 3rem 5rem 0 4rem;
+  float: left;
+}
+.connect-title {
+  font-size: 2.7rem;
+  font-family: "Rubik", sans-serif;
+  padding: 5.5rem 0rem 0 53rem;
+
+  font-weight: 300;
+}
+.connect-text,
+.features-list {
+  font-size: 1.9rem;
+  line-height: 130%;
+  padding: 3rem 10rem 0 47rem;
+}
+.features-list > li {
+  margin: 1rem 0 0 5rem;
+}
+.features-list > h3 {
+  margin: 0rem 0 2rem 3rem;
+}
+form {
+  text-align: left;
+  font-size: 1.75rem;
+  margin: 5rem 5rem 5rem 5rem;
+}
+legend {
+  font-size: 3rem;
+  margin-bottom: 1.75rem;
+}
+input,
+textarea {
+  border-radius: 5px;
+  height: 45px;
+  width: 250px;
+  margin-bottom: 2rem;
+  margin-top: 0.2rem;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 800;
+}
+textarea {
+  height: 5rem;
+  width: 35rem;
+  font-size: 1.3rem;
+}
+button {
+  width: 13rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  background-color: #202831;
+  color: #6495ed;
+  border-radius: 5px;
+  margin-left: 3.15rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  .about-title,
+  .battery-titles,
+  .about-text,
+  .battery-text,
+  .connect-title,
+  .connect-text,
+  .features-list,
+  video {
+    padding: 2rem 0rem 0 5.5rem;
+    float: none;
+    position: relative;
+  }
+  video {
+    margin-top: 25rem;
+  }
+  .right-block-img {
+    float: none;
+    margin-top: 15rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .battery-container,
+  .battery-text {
+    margin: 0;
+    padding: 0;
+  }
+}
+fieldset {
+  /* border: 1px solid white; */
+  border: none;
+  display: grid;
+  grid-template-columns: 290px 290px;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+  /* column-gap: 3rem; */
+  padding: 1rem 1rem 1rem 3rem;
+  justify-items: left;
+  max-width: 4vw;
+  box-sizing: border-box;
+  height: 60vh;
+}
