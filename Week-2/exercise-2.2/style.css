@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 120px 0 0 300px;
+  max-width: 400px;
+  max-height: 400px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.block {
+  min-width: 200px;
+  min-height: 200px;
+  z-index: 1;
+  transition: all 1.1s;
+}
+.one {
+  background-color: blue;
+}
+.two {
+  background-color: red;
+}
+.three {
+  background-color: yellow;
+}
+.four {
+  background-color: green;
+}
+
+.hello-text {
+  position: absolute;
+  top: 295px;
+  left: 425px;
+  font-size: 60px;
+  z-index: -1;
+}
+.container:hover .one {
+  transform: translateX(-200px) translateY(-200px) rotate(-90deg);
+}
+.container:hover .two {
+  transform: translateX(200px) translateY(-200px) rotate(90deg);
+}
+.container:hover .three {
+  transform: translateX(-200px) translateY(200px) rotate(-90deg);
+}
+.container:hover .four {
+  transform: translateX(200px) translateY(200px) rotate(90deg);
+}
