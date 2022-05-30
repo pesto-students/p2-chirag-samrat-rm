@@ -1,0 +1,1 @@
+The message variable stores the count value inside the string literal (`count is ${count}`) before the increment and log functions are called. So, even when the count's value is changed when the "increment ()" is called the message variable dosen't change.That's why the 'message' value is not incremented along with the 'count'.
