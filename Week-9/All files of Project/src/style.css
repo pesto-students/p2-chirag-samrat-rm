@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+main {
+  padding: 0 5vw 0 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.background-block1 {
+  position: fixed;
+  width: 30vw;
+  height: 60vh;
+  border-radius: 25%;
+  background-color: #ded0f19a;
+  right: 100px;
+  transform: rotate(30deg);
+  z-index: -1;
+}
+.background-block2 {
+  position: fixed;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 25%;
+  background-color: #d0e1f19a;
+  right: -5rem;
+  bottom: -20rem;
+  transform: rotate(60deg);
+  z-index: -1;
+}
+.background-block4 {
+  position: fixed;
+  width: 40vw;
+  height: 70vh;
+  border-radius: 25%;
+  background-color: #d0f1d69a;
+  left: -5rem;
+  top: -20rem;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.background-block3 {
+  position: fixed;
+  width: 60vw;
+  height: 80vh;
+  border-radius: 25%;
+  background-color: #f1d0e99a;
+  left: -25rem;
+  bottom: -20rem;
+  transform: rotate(60deg);
+  z-index: -1;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  background-color: #2d3264;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+}
+.header > h2 {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+}
+.navbar > a {
+  /*  removing styles in link */
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #2d3264;
+  border: 2px solid white;
+  height: 4rem;
+  width: 4rem;
+  margin-top: 0.4rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: #e3fcd2;
+  font-weight: 600;
+}
+.footer {
+  position: fixed;
+  right: 10px;
+  padding-left: 48vw;
+  bottom: 0vh;
+}
+.create-note {
+  display: flex;
+  /* border: solid 1px black; */
+  flex-direction: column;
+  min-width: 350px;
+  min-height: 250px;
+  max-width: 35vw;
+  max-height: 45vh;
+  position: relative;
+  margin: auto;
+  margin-top: 5vh;
+  box-shadow: 2px 3px 7px 1px gray;
+  border-radius: 10px;
+  margin-top: 9rem;
+}
+.create-note > input {
+  font-size: 1.4rem;
+  padding: 1rem;
+  border: none;
+  font-weight: 500;
+  outline: none;
+  z-index: 3;
+  border-radius: 10px;
+}
+.create-note > textarea {
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  font-weight: 400;
+  resize: none;
+  overflow: hidden;
+  outline: none;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 20%;
+  z-index: 3;
+  border-radius: 10px;
+}
+.create-note > button {
+  z-index: 4;
+  font-size: 3rem;
+  padding: 0.5rem;
+  border: none;
+  font-weight: 400;
+  width: 4rem;
+  height: 4rem;
+  color: #2d3264;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.create-note > button:hover {
+  transform: scale(1.2);
+  color: #0d135a;
+  transition: all;
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  height: 15rem;
+  position: relative;
+  border-radius: 2%;
+  border: 3px solid #2d3264;
+  margin-top: 5vh;
+  padding: 0.75rem 0.4rem 0.75rem 0.4rem;
+  z-index: 0;
+  overflow-y: hidden;
+  margin: 3vw 0vw 0vw 3vw;
+  background-color: white;
+}
+
+.note > h2 {
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: 500;
+  z-index: 1;
+}
+.note > p {
+  z-index: 1;
+  margin: auto;
+  margin-top: 5px;
+  font-weight: 500;
+  padding: 0.75rem;
+}
+.delete-btn {
+  z-index: 2;
+  color: #2d3264;
+  cursor: pointer;
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  padding: 0.4rem;
+  background-color: rgb(255, 189, 189);
+  border: 1px rgb(255, 180, 180) solid;
+  border-radius: 50%;
+}
+.delete-btn:hover {
+  background-color: rgb(253, 103, 103);
+  transform: scale(1.1);
+}
+.done-btn {
+  z-index: 2;
+  color: #2d3264;
+  cursor: pointer;
+  position: absolute;
+  bottom: 3px;
+  right: 3rem;
+  padding: 0.4rem;
+  background-color: rgb(216, 217, 255);
+  border: 1px rgb(200, 180, 255) solid;
+  border-radius: 50%;
+}
+.done-btn:hover {
+  background-color: rgb(103, 110, 253);
+  transform: scale(1.2);
+}
