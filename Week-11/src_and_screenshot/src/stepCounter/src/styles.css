@@ -1,0 +1,36 @@
+body{
+  background-color: #f0f1f5;
+}
+.App {
+  font-family: monospace;
+  font-weight:600;
+  font-size: 1.3rem;
+  text-align: center;
+}
+button {
+  background-color:  #663399 ;
+  border:2px solid;
+  border-radius: 10px;
+  height:60px;
+  width:150px;
+  font-size:2rem;
+  box-sizing: border-box;
+  padding:0.5rem;
+  color:white;
+  
+}
+button:hover{
+  transform: scale(1.05);
+  background-color:#7638d2 ;
+  border:none;
+}
+.inc-dec{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top:5vh;
+  margin-bottom: 5vh;
+}
+.inc-dec > button{
+  margin-right:2rem;
+}
